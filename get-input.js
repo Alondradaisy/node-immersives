@@ -18,13 +18,12 @@ function getInput(n) {
 
 module.exports = getInput;
   
-const str = getInput();
-  getInput(1); "Hi" + str;
-  getInput(2).toUpperCase; "Daisy" + "Warren";
-  getInput(3); "D " + "W";
-  getInput(4); "daisy.warren@codeimmersives.com";
+const firstName = getInput(1);
+const lastName = getInput(2); 
+const fullName = firstName + " " + lastName;
+const email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@codeimmersives.com"; 
 
-console.log("Hi" + str1);
-console.log("daisy" + "warren");
-console.log("D" + "W");
-console.log("daisywarren@codeimmersives.com");
+console.log("Hi, " + fullName + "!");
+console.log("Your name capitalized is:" + fullName.toUpperCase());
+console.log("Your initials:" + firstName[0] + lastName[0] + ".");
+console.log("Your Code Immersives email address is" + email);
